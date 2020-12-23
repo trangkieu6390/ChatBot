@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Track.DetailActivity"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/cardView2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            >
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Country"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgCountry"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/confirm_icon" />
+
+                <TextView
+                    android:id="@+id/tvCountryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="Country"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCountry"
+                    app:layout_constraintStart_toEndOf="@+id/imgCountry"
+                    app:layout_constraintTop_toTopOf="@+id/imgCountry" />
+
+                <TextView
+                    android:id="@+id/tvCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="1,062"
+                    android:textColor="#1E2432"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:layout_constraintStart_toStartOf="@+id/imgCountry"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCountry" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            tools:ignore="MissingConstraints,NotSibling"
+            app:layout_constraintStart_toEndOf="@+id/cardView1"
+            app:layout_constraintTop_toTopOf="@+id/cardView1"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView1">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgDate1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/death_icon" />
+
+                <TextView
+                    android:id="@+id/tvDate0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="Date"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgDate1"
+                    app:layout_constraintStart_toEndOf="@+id/imgDate1"
+                    app:layout_constraintTop_toTopOf="@+id/imgDate1" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="20/2/2020"
+                    android:textColor="#1E2432"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgDate1"
+                    app:layout_constraintTop_toBottomOf="@+id/imgDate1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="0dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/cardView2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgTotalRecovered"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/mainline" />
+
+                <ImageView
+                    android:id="@+id/imgDataRecovered"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/recovered_icon" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="Total Recovered"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgDataRecovered"
+                    app:layout_constraintStart_toEndOf="@+id/imgDataRecovered"
+                    app:layout_constraintTop_toTopOf="@+id/imgDataRecovered" />
+
+                <TextView
+                    android:id="@+id/tvTotalRecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="689"
+                    android:textColor="#1E2432"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgDataRecovered"
+                    app:layout_constraintTop_toBottomOf="@+id/imgDataRecovered" />
+
+                <TextView
+                    android:id="@+id/tvPeople2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="People"
+                    android:textColor="#1E2432"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvTotalRecovered"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalRecovered" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="0dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgNewCard"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/mainline" />
+
+                <ImageView
+                    android:id="@+id/imgDataNewConfirm"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/new_cases_icon" />
+
+                <TextView
+                    android:id="@+id/tvNewRecovered1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/NewRecovered"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgDataNewConfirm"
+                    app:layout_constraintStart_toEndOf="@+id/imgDataNewConfirm"
+                    app:layout_constraintTop_toTopOf="@+id/imgDataNewConfirm" />
+
+                <TextView
+                    android:id="@+id/tvNewRecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="52"
+                    android:textColor="#1E2432"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgDataNewConfirm"
+                    app:layout_constraintTop_toBottomOf="@+id/imgDataNewConfirm" />
+
+                <TextView
+                    android:id="@+id/tvPeople3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="People"
+                    android:textColor="#1E2432"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvNewRecovered"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNewRecovered" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="0dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/cardView2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgTotalNewComfirm"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/mainline" />
+
+                <ImageView
+                    android:id="@+id/imgNewRecovered"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/recovered_icon" />
+
+                <TextView
+                    android:id="@+id/tvRecovered1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="Total Confirmed"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgNewRecovered"
+                    app:layout_constraintStart_toEndOf="@+id/imgNewRecovered"
+                    app:layout_constraintTop_toTopOf="@+id/imgNewRecovered" />
+
+                <TextView
+                    android:id="@+id/tvTotalConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="689"
+                    android:textColor="#1E2432"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgNewRecovered"
+                    app:layout_constraintTop_toBottomOf="@+id/imgNewRecovered" />
+
+                <TextView
+                    android:id="@+id/tvPeople4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="People"
+                    android:textColor="#1E2432"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvTotalConfirmed"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalConfirmed" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="0dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView5"
+            app:layout_constraintTop_toTopOf="@+id/cardView5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgNeưDeath"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/mainline" />
+
+                <ImageView
+                    android:id="@+id/imgDataNewDeath"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/new_cases_icon" />
+
+                <TextView
+                    android:id="@+id/tvNewConfirm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/NewConfirm"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgDataNewDeath"
+                    app:layout_constraintStart_toEndOf="@+id/imgDataNewDeath"
+                    app:layout_constraintTop_toTopOf="@+id/imgDataNewDeath" />
+
+                <TextView
+                    android:id="@+id/tvNewConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="52"
+                    android:textColor="#1E2432"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgDataNewDeath"
+                    app:layout_constraintTop_toBottomOf="@+id/imgDataNewDeath" />
+
+                <TextView
+                    android:id="@+id/tvPeople5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="People"
+                    android:textColor="#1E2432"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvNewConfirmed"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNewConfirmed" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="0dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/cardView6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgTotalDeath1"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/mainline" />
+
+                <ImageView
+                    android:id="@+id/imgTotalDeaths"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/recovered_icon" />
+
+                <TextView
+                    android:id="@+id/tvTotalDeath1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/TotalDeath"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgTotalDeaths"
+                    app:layout_constraintStart_toEndOf="@+id/imgTotalDeaths"
+                    app:layout_constraintTop_toTopOf="@+id/imgTotalDeaths" />
+
+                <TextView
+                    android:id="@+id/tvTotalDeaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="689"
+                    android:textColor="#1E2432"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgTotalDeaths"
+                    app:layout_constraintTop_toBottomOf="@+id/imgTotalDeaths" />
+
+                <TextView
+                    android:id="@+id/tvPeople6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:text="People"
+                    android:textColor="#1E2432"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvTotalDeaths"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalDeaths" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="0dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView7"
+            app:layout_constraintTop_toTopOf="@+id/cardView7">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgNewDeaths"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/mainline" />
+
+                <ImageView
+                    android:id="@+id/imgDataNewDeaths"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/new_cases_icon" />
+
+                <TextView
+                    android:id="@+id/tvNewDeath1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/NewDeath"
+                    android:textColor="#1E2432"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgDataNewDeaths"
+                    app:layout_constraintStart_toEndOf="@+id/imgDataNewDeaths"
+                    app:layout_constraintTop_toTopOf="@+id/imgDataNewDeaths" />
+
+                <TextView
+                    android:id="@+id/tvNewDeaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="52"
+                    android:textColor="#1E2432"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgDataNewDeaths"
+                    app:layout_constraintTop_toBottomOf="@+id/imgDataNewDeaths" />
+
+                <TextView
+                    android:id="@+id/tvPeople8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="People"
+                    android:textColor="#1E2432"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvNewDeaths"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNewDeaths" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/constraintLayout"
+        android:id="@+id/CardViewGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                >
+                <org.eazegraph.lib.charts.BarChart
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/barchart"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="15dp"
+                    app:egFixedBarWidth="true"
+                    app:egBarWidth="20dp"
+                    app:egLegendHeight="40dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/NewConfirm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="30dp"
+
+                            android:text="@string/NewConfirm" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:paddingLeft="25dp"
+                        android:gravity="center_vertical">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TotalConfirm"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TotalConfirm"
+                            android:paddingLeft="30dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                //
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_below="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/NewConDeath"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/NewDeath"
+                            android:paddingLeft="30dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:paddingLeft="46dp"
+                        android:gravity="center_vertical">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TotalDeath"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TotalDeath"
+                            android:paddingLeft="30dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                //
+                <LinearLayout
+                    android:layout_below="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/NewRecovered"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/NewRecovered"
+                            android:paddingLeft="30dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:paddingLeft="30dp"
+                        android:gravity="center_vertical">
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TotalRecovered"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TotalRecovered"
+                            android:paddingLeft="30dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

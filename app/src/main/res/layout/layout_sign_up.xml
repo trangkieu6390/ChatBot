@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+
+    <LinearLayout
+        style="@style/linearParent"
+       android:layout_gravity="center"
+        android:padding="20dp">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                style="@style/headerTextPrimary"
+                android:id="@+id/signup_title_text"
+                android:text="@string/create_account"
+                android:transitionName="transition_title_text" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SignupFullname"
+
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                app:startIconDrawable="@drawable/field_username_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                   android:maxLines="1"
+                    android:hint="Enter Fullname"
+                    style="@style/modifiedEditText"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SignupEmail"
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                app:startIconDrawable="@drawable/field_email_icon"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/modifiedEditText"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:hint="Enter Email"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SignupPassword"
+                style="@style/parent"
+                app:startIconDrawable="@drawable/field_password_number_icon"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPassword"
+                   android:maxLines="1"
+                    android:hint="Enter Password"
+                    style="@style/modifiedEditText"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SignupPhoneNo"
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                app:startIconDrawable="@drawable/field_phone_number_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="number"
+                    style="@style/modifiedEditText"
+                    android:hint="Enter Phone Number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_gravity="center"
+            android:onClick="callLoginScreen"
+            android:text="@string/register"
+            style="@style/loginButton" />
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

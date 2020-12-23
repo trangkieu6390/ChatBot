@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#0AEAC8"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="uploadImage"
+            android:src="@drawable/faceprofile" />
+
+        <TextView
+            android:id="@+id/fullname_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:fontFamily="@font/muli"
+            android:includeFontPadding="false"
+            android:text="@string/full_name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:hint="@string/full_name"
+        android:id="@+id/FullNameProfile"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableLeft="@drawable/field_username_icon"
+            android:drawablePadding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/Email"
+            android:id="@+id/EmailProfile"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/field_email_icon"
+                android:drawablePadding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/phone"
+            android:id="@+id/PhoneProfile"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/field_phone_number_icon"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/password"
+            android:id="@+id/PasswordProfile"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/field_password_number_icon"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:layout_width="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:onClick="updateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_button_bk"
+            android:text="@string/update" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

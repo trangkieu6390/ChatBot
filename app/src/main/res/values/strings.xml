@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Track Covid19</string>
+
+    <string name="covid19">Covid-19</string>
+
+    --Login-Register--
+    <string name="retailer_tag_line">we will help you monitor the situation of Covid-19</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="create_account">REGISTER</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="Email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="update">UPDATE</string>
+
+    --Dashboard--
+    <string name="title">You need Covid19 prevention consulting?</string>
+    <string name="title2">If you need consulting any of Covid-19 sysptoms\nplease Chat with us immediately for help.</string>
+    <string name="symptoms">Systoms of COVID-19</string>
+    <string name="washhandoften">Wash hands often</string>
+    <string name="prevention">Prevention of COVID-19</string>
+    <string name="see_statistics">See Statistics</string>
+
+    --PieChart--
+    <string name="totalcase">Total Cases</string>
+    <string name="Recovered">Recovered</string>
+    <string name="death">Deaths</string>
+    <string name="active">Active</string>
+    <string name="globalstat">Global Stats</string>
+    <string name="case1">Cases</string>
+    <string name="Critical">Critical</string>
+    <string name="todaycase">Today Cases</string>
+    <string name="totaldeath">Total Deaths</string>
+    <string name="todaydeath">Today Deaths</string>
+    <string name="AffectedCountries">Affected Countries</string>
+    <string name="TrackCountries">Track Countries</string>
+    <string name="search">Search</string>
+    <string name="NewConfirm">New Confirmed</string>
+    <string name="TotalConfirm">Total Confirmed</string>
+    <string name="NewDeath">New Deaths</string>
+    <string name="TotalDeath">Total Deaths</string>
+    <string name="NewRecovered">New recovered</string>
+    <string name="TotalRecovered">Total Recovered</string>
+
+    <string name="forget_password_detail">We will send you an One Time Password on this mobile number!</string>
+    <string name="VerificationCode">OTP VERIFICATION</string>
+    <string name="verification_code_detail">Enter the OTP sent to!</string>
+    <string name="resetpassword">RERSET PASSWORD</string>
+    <string name="reset_password_detail">YOUR IDENTITY HAS BEEN VERIFIED! SET YOUR NEW PASSWORD</string>
+    <string name="ok">OK</string>
+    <string name="text_Updated">Password Updated</string>
+    <string name="Updated_detail">your password has been updated!</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="_84">+84-</string>
+    <string name="otp">Did not receive the OTP</string>
+    <string name="resentOTP">Resent OTP</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="Edit">Edit</string>
+    <string name="Logout">Logout</string>
+</resources>
